@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.jpeg" alt="Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#contact">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-section">
+            <h2 id="welcome-message">Hi, Welcome to Website</h2>
+            <p>Ini adalah website latihan pertama</p>
+        </div>        
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+        <header>
+            <h1>Welcome to Our School</h1>
+            <img src="assets/photo.jpg" alt="School Banner" class="banner-image">
+        </header>
+
+        <div class="profile-content">
+            <article>
+                <h2>About Our School</h2>
+                <p>This is where you can write about your school's history, achievements, and other relevant information.</p>
+            </article>
+
+            <article>
+                <h2>Vision & Mission</h2>
+                <p>Include your school's vision and mission statements here.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Message Us</h2>
+        <form id="contact-form" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Pop-Up Section -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Form Submitted Successfully!</h2>
+            <p><strong>Name:</strong> <span id="popup-name"></span></p>
+            <p><strong>Email:</strong> <span id="popup-email"></span></p>
+            <p><strong>Phone:</strong> <span id="popup-phone"></span></p>
+            <p><strong>Message:</strong> <span id="popup-message"></span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
